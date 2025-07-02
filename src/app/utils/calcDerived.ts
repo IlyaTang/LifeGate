@@ -1,0 +1,26 @@
+import {Attributes, Derived} from '../models';
+
+export const calcDerived = (a:Attributes):Derived => ({
+  might:         .5*a.S + .3*a.V + .2*a.A,
+  finesse:       .5*a.A + .3*a.Psy + .2*a.C,
+  endurance:     .5*a.V + .3*a.S + .2*a.Psy,
+  technical:     .5*a.T + .3*a.C + .2*a.A,
+  psiPower:      .5*a.Psy + .3*a.C + .2*a.Ch,
+  insight:       .5*a.C + .3*a.Psy + .2*a.A,
+  expression:    .5*a.Ch + .3*a.C + .2*a.Psy,
+  manipulation:  .5*a.Ch + .3*a.S + .2*a.Psy,
+  mobility:      .5*a.A + .3*a.V + .2*a.S,
+  shielding:     .5*a.T + .3*a.V + .2*a.Psy,
+  leadership:    .5*a.C + .3*a.Ch + .2*a.Psy,
+  craftsmanship: .5*a.S + .3*a.T + .2*a.C,
+  survival:      .5*a.V + .3*a.Psy + .2*a.C,
+  animal:        .5*a.Psy + .3*a.Ch + .2*a.V,
+  creativity:    .5*a.Psy + .3*a.C + .2*a.Ch,
+  vehicle:       .5*a.T + .3*a.A + .2*a.C,
+  psiDef:        .5*a.Psy + .3*a.V + .2*a.C,
+  commerce:      .5*a.Ch + .3*a.C + .2*a.Psy,
+  resourcefulness:.5*a.S + .3*a.T + .2*a.C,
+  initiative:    .5*a.A + .3*a.C + .2*a.Psy,
+  scholarship:   .5*a.C + .3*a.Psy + .2*a.T,
+  grit:          .5*a.V + .3*a.S + .2*a.A,
+});
